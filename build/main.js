@@ -180,7 +180,7 @@
 	        _react2.default.createElement(
 	          _reactBootstrap.Carousel.Item,
 	          null,
-	          _react2.default.createElement('img', { width: 900, height: 500, margin: 'auto', alt: '900x500', src: './horse.jpg' }),
+	          _react2.default.createElement('img', { width: 900, height: 500, 'text-align': 'center', alt: '900x500', src: './horse.jpg' }),
 	          _react2.default.createElement(
 	            _reactBootstrap.Carousel.Caption,
 	            null,
@@ -199,7 +199,7 @@
 	        _react2.default.createElement(
 	          _reactBootstrap.Carousel.Item,
 	          null,
-	          _react2.default.createElement('img', { width: 900, height: 500, margin: 'auto', alt: '900x500', src: './horse.jpg' }),
+	          _react2.default.createElement('img', { width: 900, height: 500, 'text-align': 'center', alt: '900x500', src: './horse.jpg' }),
 	          _react2.default.createElement(
 	            _reactBootstrap.Carousel.Caption,
 	            null,
@@ -218,7 +218,7 @@
 	        _react2.default.createElement(
 	          _reactBootstrap.Carousel.Item,
 	          null,
-	          _react2.default.createElement('img', { width: 900, height: 500, margin: 'auto', alt: '900x500', src: './horse.jpg' }),
+	          _react2.default.createElement('img', { width: 900, height: 500, 'text-align': 'center', alt: '900x500', src: './horse.jpg' }),
 	          _react2.default.createElement(
 	            _reactBootstrap.Carousel.Caption,
 	            null,
