@@ -1,0 +1,15 @@
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+
+
+body {
+    background-image: require("back1.jpg");
+
+}
