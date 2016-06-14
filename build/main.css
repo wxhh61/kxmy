@@ -11,5 +11,6 @@
 
 body {
     background-image: url("back1.jpg");
-
+ -webkit-background-size: 100% auto;
+ -o-background-size: 100% auto;
 }
