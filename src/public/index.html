@@ -1,39 +1,32 @@
 <!doctype html>
 <html>
   <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 　
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <title>中国三河马</title>
-
+    <title>中国</title>
+    <style>
+      .loader {
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        background: url('page-loader.gif') 50% 50% no-repeat rgb(249,249,249);
+      }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
   </head>
   <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">中国三河马</a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">首页</a></li>
-            <li class="active"><a href="#about">基地简介</a></li>
-            <li class="active"><a href="#contact">联系方式</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
+    <div id="index"></div>
+    <audio  >
+      <source src="./SoundHelix-Song-14.mp3" type="audio/ogg"></source>
+      <source src="./SoundHelix-Song-14.mp3" type="audio/mpeg"></source>
+    </audio>
 
-    <div id="title"></div>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-bootstrap/0.25.1/react-bootstrap.js"></script>
 
   </body>
 </html>

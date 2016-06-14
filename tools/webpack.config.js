@@ -8,8 +8,8 @@ var HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
 
 module.exports = {
   entry: [
-   './src/public/main.js'
-  ],
+    './src/public/main.js',// './src/public/main.css'
+   ],
   output: {
     path: './build',
     filename: "main.js"
@@ -26,7 +26,8 @@ module.exports = {
        query: {
           presets: ['react', 'es2015']
         }
-     }
+      },
+      // { test: /\.css$/, loader: "style!css" ,exclude: /\.jpg$/}
     ]
   },
   plugins: [HTMLWebpackPluginConfig],
