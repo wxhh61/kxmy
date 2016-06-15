@@ -8,7 +8,7 @@ var HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
 
 module.exports = {
   entry: [
-    './src/public/main.js',// './src/public/main.css'
+    './src/public/main.js'
    ],
   output: {
     path: './build',
@@ -27,7 +27,15 @@ module.exports = {
           presets: ['react', 'es2015']
         }
       },
-      // { test: /\.css$/, loader: "style!css" ,exclude: /\.jpg$/}
+      { test: /\.css$/, loader: "style-loader!css-loader" },
+      // { test: /\.(png|jpg|woff|woff2|eot|ttf|otf)/, loader: 'url-loader' },
+
+      // { test: /\.jpg$/,    loader: "url-loader?limit=10000&minetype=image/jpg" },
+      { test: /\.jpe?g$|\.gif$|\.png$|\.svg$|\.woff$|\.ttf$|\.wav$|\.mp3$/, loader: "file" }
+      // {
+      //   test: /\.(jpg|png)$/,
+      //   loader: 'file?name=[path][name].[hash].[ext]'
+      // }
     ]
   },
   plugins: [HTMLWebpackPluginConfig],

@@ -7,9 +7,12 @@
     text-align: center;
 }
 
+html,body {
+height: 100%;
+}
 
 
 body {
-    background-image: require("back1.jpg");
-
+    background-image: url("./back1.jpg");
+background-size: 100% 100%;
 }

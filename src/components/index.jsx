@@ -1,6 +1,7 @@
 import React from 'react'
 import { render } from 'react-dom'
 import { Router, Route, IndexRoute, Link, IndexLink, browserHistory } from 'react-router'
+import {ReactAudioPlayer}  from 'react-audio-player'
 // import {Home}  from "./home.jsx"
 
 const ACTIVE = { color: 'red' }
@@ -27,6 +28,7 @@ const App = ({ children }) => (
       </Navbar.Collapse>
     </Navbar>
     {children}
+
   </div>
 )
 
@@ -46,13 +48,17 @@ const About = () => (
     </div>
 )
 
+
+// horse = require("./horse.jpg")
+
+
 const Home = () => (
 
     <Grid>
     <Row className="show-grid">
     <Carousel>
     <Carousel.Item>
-    <img width={900} height={500} text-align="center"  alt="900x500" src="./horse.jpg"/>
+    <img width={900} height={500} text-align="center"  alt="900x500" src= { require("./horse.jpg")} />
       <Carousel.Caption>
         <h3>马1的名字</h3>
         <p>马1的介绍</p>
@@ -60,7 +66,7 @@ const Home = () => (
     </Carousel.Item>
 
         <Carousel.Item>
-    <img width={900} height={500} text-align="center"  alt="900x500" src="./horse.jpg"/>
+    <img width={900} height={500} text-align="center"  alt="900x500" src= { require("./horse.jpg")} />
       <Carousel.Caption>
         <h3>马2的名字</h3>
         <p>马2的介绍</p>
@@ -68,7 +74,7 @@ const Home = () => (
     </Carousel.Item>
 
        <Carousel.Item>
-    <img width={900} height={500} text-align="center"  alt="900x500" src="./horse.jpg"/>
+    <img width={900} height={500} text-align="center"  alt="900x500" src= { require("./horse.jpg")} />
       <Carousel.Caption>
         <h3>马3的名字</h3>
         <p>马3的介绍</p>
@@ -77,8 +83,14 @@ const Home = () => (
 
     </Carousel>
 
-     </Row>
-     </Grid>
+    </Row>
+
+    <audio controls autoplay="true">
+          <source src={require("../public/SoundHelix-Song-14.mp3")} type="audio/ogg"></source>
+          <source src={require("../public/SoundHelix-Song-14.mp3")}  type="audio/mpeg"></source>
+       </audio>
+    </Grid>
+
 
 )
 
