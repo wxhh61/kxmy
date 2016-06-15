@@ -85,10 +85,7 @@ const Home = () => (
 
     </Row>
 
-    <audio controls autoplay="true">
-          <source src={require("../public/SoundHelix-Song-14.mp3")} type="audio/ogg"></source>
-          <source src={require("../public/SoundHelix-Song-14.mp3")}  type="audio/mpeg"></source>
-       </audio>
+
     </Grid>
 
 
