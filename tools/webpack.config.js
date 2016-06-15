@@ -1,9 +1,16 @@
 // In webpack.config.js
-var HtmlWebpackPlugin = require('html-webpack-plugin')
+var  webpack = require('webpack');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 var HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
   template: './src/public/index.html',
   filename: 'index.html',
   inject: 'body'
+});
+
+var potimize = new webpack.optimize.UglifyJsPlugin({
+    compress: {
+        warnings: false
+    }
 });
 
 module.exports = {
@@ -31,13 +38,13 @@ module.exports = {
       // { test: /\.(png|jpg|woff|woff2|eot|ttf|otf)/, loader: 'url-loader' },
 
       // { test: /\.jpg$/,    loader: "url-loader?limit=10000&minetype=image/jpg" },
-      { test: /\.jpe?g$|\.gif$|\.png$|\.svg$|\.woff$|\.ttf$|\.wav$|\.mp3$/, loader: "file" }
+      { test: /\.jpe?g$|\.gif$|\.png$|\.svg$|\.woff$|\.ttf$|\.wav$|\.mp3$/, loader: "file?limit=500&minetype=image/jpg" }
       // {
       //   test: /\.(jpg|png)$/,
       //   loader: 'file?name=[path][name].[hash].[ext]'
       // }
     ]
   },
-  plugins: [HTMLWebpackPluginConfig],
+  plugins: [HTMLWebpackPluginConfig, potimize],
   debug: true
 };
