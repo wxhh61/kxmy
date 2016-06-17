@@ -13,6 +13,12 @@ var potimize = new webpack.optimize.UglifyJsPlugin({
     }
 });
 
+var production = new webpack.DefinePlugin({
+  "process.env": {
+    NODE_ENV: JSON.stringify("production")
+  }
+});
+
 module.exports = {
   entry: [
     './src/public/main.js'
@@ -45,6 +51,6 @@ module.exports = {
       // }
     ]
   },
-  plugins: [HTMLWebpackPluginConfig, potimize],
+  plugins: [HTMLWebpackPluginConfig, potimize, production],
   debug: true
 };
