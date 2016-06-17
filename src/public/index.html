@@ -8,14 +8,19 @@
   <body>
     <div class="loader"></div>
     <div id="index"></div>
-    <!--  <audio  autoplay> -->
-    <!--    <source src={require("../public/SoundHelix-Song-14.mp3")} type="audio/ogg"></source> -->
-    <!--    <source src={require("../public/SoundHe lix-Song-14.mp3")}  type="audio/mpeg"></source> -->
-    <!-- </audio> -->
+     <!-- <audio  autoplay> -->
+     <!--   <source src={require("../public/background.mp3") type="audio/ogg"></source> -->
+     <!--   <source src={require("../public/background.mp3")}  type="audio/mpeg"></source> -->
+     <!-- </audio> -->
+     <audio  autoplay>
+       <source src="./background.mp3" type="audio/ogg"></source>
+       <source src="./background.mp3"  type="audio/mpeg"></source>
+     </audio>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script type="text/javascript">
         $(window).load(function() {
-              $(".loader").fadeOut("slow");
+              $(".loader").fadeOut(5000);
               })
     </script>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
