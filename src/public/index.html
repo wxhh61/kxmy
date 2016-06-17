@@ -12,7 +12,7 @@
      <!--   <source src={require("../public/background.mp3") type="audio/ogg"></source> -->
      <!--   <source src={require("../public/background.mp3")}  type="audio/mpeg"></source> -->
      <!-- </audio> -->
-     <audio  autoplay>
+     <audio id="background-sound"  autoplay>
        <source src="./background.mp3" type="audio/ogg"></source>
        <source src="./background.mp3"  type="audio/mpeg"></source>
      </audio>
@@ -20,8 +20,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script type="text/javascript">
         $(window).load(function() {
-              $(".loader").fadeOut(5000);
-              })
+          $(".loader").fadeOut(5000,function() {
+            $("#background-sound")[0].pause();
+          } );
+         })
     </script>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
