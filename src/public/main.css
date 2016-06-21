@@ -13,8 +13,19 @@
     float: none;
 }
 
+
+
 .navbar .navbar-collapse {
     text-align: center;
+}
+
+.nav>li>a {
+    color:#141415;
+
+}
+
+#left-tabs-exampl {
+    background-color:#161616;
 }
 
 html,body {
