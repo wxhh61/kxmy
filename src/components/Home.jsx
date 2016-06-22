@@ -28,36 +28,7 @@ var navi = [
 export default React.createClass({
   render() {
     return  (
-    // <Grid>
-    //   <Row className="show-grid">
-    //     <Carousel>
-    //       <Carousel.Item>
-    //         <img width={900} height={500} text-align="center"  alt="900x500" src= { require("../public/horse.jpg")} />
-    //         <Carousel.Caption>
-    //           <h3>马1的名字</h3>
-    //           <p>马1的介绍</p>
-    //         </Carousel.Caption>
-    //       </Carousel.Item>
 
-    //       <Carousel.Item>
-    //         <img width={900} height={500} text-align="center"  alt="900x500" src= { require("../public/horse.jpg")} />
-    //         <Carousel.Caption>
-    //           <h3>马2的名字</h3>
-    //           <p>马2的介绍</p>
-    //         </Carousel.Caption>
-    //       </Carousel.Item>
-
-    //       <Carousel.Item>
-    //         <img width={900} height={500} text-align="center"  alt="900x500" src= { require("../public/horse.jpg")} />
-    //         <Carousel.Caption>
-    //           <h3>马3的名字</h3>
-    //           <p>马3的介绍</p>
-    //         </Carousel.Caption>
-    //       </Carousel.Item>
-
-    //     </Carousel>
-    //   </Row>
-      //     </Grid>
    // <Clearfix>
    //  <ul class="nav nav-pills nav-stacked">
    //    <MenuItem header>Header</MenuItem>
@@ -118,24 +89,24 @@ export default React.createClass({
    <Grid style={divStyle}>
      <Row className="show-grid">
         <Col xsOffset={1} sm={6} md={3}>
-
+        <Row>
+        <p>三河马</p>
+        </Row>
+           <Row>
            <Nav  bsStyle="tabs" stacked  >
-        <NavItem   title="Item"  componentClass={Link} href="/about"  to="/contact"><Glyphicon glyph="glyphicon glyphicon-grain" />Navitem</NavItem>
-        <NavItem title="Item"  componentClass={Link} href="/about"  to="/contact"><Glyphicon glyph="glyphicon glyphicon-grain" /> NavItem 2 content</NavItem>
-             <NavItem  title="Item"  componentClass={Link} href="/about"  to="/contact"><Glyphicon glyph="glyphicon glyphicon-grain" />NavItem 1 content</NavItem>
-        <NavItem title="Item"  componentClass={Link} href="/about"  to="/contact"><Glyphicon glyph="glyphicon glyphicon-grain" />NavItem 2 content</NavItem>
-             <NavItem  title="Item"  componentClass={Link} href="/about"  to="/contact"><Glyphicon glyph="glyphicon glyphicon-grain" />NavItem 1 content</NavItem>
-        <NavItem title="Item"  componentClass={Link} href="/about"  to="/contact"><Glyphicon glyph="glyphicon glyphicon-grain" />NavItem 2 content</NavItem>
-             <NavItem  title="Item"  componentClass={Link} href="/about"  to="/contact"><Glyphicon glyph="glyphicon glyphicon-grain" />NavItem 1 content</NavItem>
-        <NavItem title="Item"  componentClass={Link} href="/about"  to="/contact"><Glyphicon glyph="glyphicon glyphicon-grain" />NavItem 2 content</NavItem>
-             <NavItem  title="Item"  componentClass={Link} href="/about"  to="/contact"><Glyphicon glyph="glyphicon glyphicon-grain" />NavItem 1 content</NavItem>
-              <NavItem title="Item"  componentClass={Link} href="/about"  to="/contact"><Glyphicon glyph="glyphicon glyphicon-grain" />NavItem 2 content</NavItem>
-         </Nav>
+        <NavItem   title="Item"  componentClass={Link} href="/about"  to="/contact"><Glyphicon glyph="glyphicon glyphicon-grain" />拥有百年马史</NavItem>
+        <NavItem title="Item"  componentClass={Link} href="/about"  to="/contact"><Glyphicon glyph="glyphicon glyphicon-grain" /> 草原名驹</NavItem>
+             <NavItem  title="Item"  componentClass={Link} href="/about"  to="/contact"><Glyphicon glyph="glyphicon glyphicon-grain" />我与马</NavItem>
+        <NavItem title="Item"  componentClass={Link} href="/about"  to="/contact"><Glyphicon glyph="glyphicon glyphicon-grain" />马闻</NavItem>
+             <NavItem  title="Item"  componentClass={Link} href="/about"  to="/contact"><Glyphicon glyph="glyphicon glyphicon-grain" />呼伦贝尔的传说</NavItem>
+        <NavItem title="Item"  componentClass={Link} href="/about"  to="/contact"><Glyphicon glyph="glyphicon glyphicon-grain" />呼伦贝尔的传说1</NavItem>
+        </Nav>
+           </Row>
 
 
        </Col>
         <Col sm={8} md={8}>
-           <Image width={900} height={500} text-align="center"  alt="900x500" src= { require("../public/horse.jpg")} responsive thumbnail />
+           <Image width={900} height={600} text-align="center"  alt="900x600" src= { require("../public/horse.jpg")} responsive thumbnail />
         </Col>
     </Row>
   </Grid>

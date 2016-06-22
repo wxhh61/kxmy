@@ -8,15 +8,26 @@
     background: url('./loading.gif') 50% 50% no-repeat rgb(249,249,249);
 }
 
+@font-face {
+    font-family: 'hanzi'; /*a name to be used later*/
+    src: url('./hanzi.ttf'); /*URL to font*/
+}
+
 .navbar .navbar-nav {
     display: inline-block;
     float: none;
+     /* background: url('./loading.gif') 50% 50% no-repeat rgb(249,249,249); */
 }
 
+.container-fluid {
+
+    /* background: url('./loading.gif') 50% 50% no-repeat rgb(249,249,249); */
+}
 
 
 .navbar .navbar-collapse {
     text-align: center;
+     /* background: url('./loading.gif') 50% 50% no-repeat rgb(249,249,249); */
 }
 
 .nav>li>a {
@@ -36,4 +47,12 @@ height: 100%;
 body {
     background-image: url("./background.jpg");
 background-size: 100% 100%;
+}
+
+
+p {
+    text-align: center;
+    margin: 0 0 10px;
+    font-family: hanzi, Times, serif;
+    font-size: 60px;
 }
