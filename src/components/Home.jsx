@@ -8,23 +8,6 @@ var divStyle = {
 };
 
 
-
-// import { SideNav, Nav } from 'react-sidenav';
-
-
-var navi = [
-    { id: 'dashboard', icon: 'fa fa-dashboard' , text: 'Dashboard'},
-    { id: 'products', icon: 'fa fa-cube', text: 'Products' ,
-        navlist: [
-          { icon: 'fa fa-desktop', id: 'manage' ,text: 'Manage Product' },
-          { icon: 'fa fa-cog', id: 'suppliers' ,text: 'Suppliers' }
-        ]
-    },
-    { id: 'inventory', icon: 'fa fa-database' ,text: 'Inventory'},
-    { id: 'deliveries', icon: 'fa fa-truck' ,text: 'Deliveries'},
-    { id: 'reports', icon: 'fa fa-bar-chart' ,text: 'Reports' }
-];
-
 export default React.createClass({
   render() {
     return  (
@@ -85,7 +68,7 @@ export default React.createClass({
 // </Col>
 //   </Row>
 // </Grid>
-
+ <Clearfix>
    <Grid style={divStyle}>
      <Row className="show-grid">
         <Col xsOffset={1} sm={6} md={3}>
@@ -93,7 +76,7 @@ export default React.createClass({
         <p>三河马</p>
         </Row>
            <Row>
-           <Nav  bsStyle="tabs" stacked  >
+           <Nav  bsStyle="pills" stacked  >
         <NavItem   title="Item"  componentClass={Link} href="/about"  to="/contact"><Glyphicon glyph="glyphicon glyphicon-grain" />拥有百年马史</NavItem>
         <NavItem title="Item"  componentClass={Link} href="/about"  to="/contact"><Glyphicon glyph="glyphicon glyphicon-grain" /> 草原名驹</NavItem>
              <NavItem  title="Item"  componentClass={Link} href="/about"  to="/contact"><Glyphicon glyph="glyphicon glyphicon-grain" />我与马</NavItem>
@@ -110,7 +93,7 @@ export default React.createClass({
         </Col>
     </Row>
   </Grid>
-
+  </Clearfix>
 
     );
   }

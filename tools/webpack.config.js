@@ -44,7 +44,7 @@ module.exports = {
       // { test: /\.(png|jpg|woff|woff2|eot|ttf|otf)/, loader: 'url-loader' },
 
       // { test: /\.jpg$/,    loader: "url-loader?limit=10000&minetype=image/jpg" },
-      { test: /\.jpe?g$|\.gif$|\.png$|\.svg$|\.woff$|\.ttf$|\.wav$|\.mp3$/, loader: "file?limit=500&minetype=image/jpg" }
+      { test: /\.jpe?g$|\.gif$|\.png$|\.svg$|\.woff$|\.ttf$|\.wav$|\.mp3$/, loader: "file-loader?limit=500&minetype=image/jpg" },
       // {
       //   test: /\.(jpg|png)$/,
       //   loader: 'file?name=[path][name].[hash].[ext]'
