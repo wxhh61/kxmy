@@ -73,7 +73,7 @@ export default React.createClass({
      <Row className="show-grid">
         <Col xsOffset={1} sm={6} md={3}>
         <Row>
-        <p>三河马</p>
+        <p id="hanzi">三河马</p>
         </Row>
            <Row>
            <Nav  bsStyle="pills" stacked  >

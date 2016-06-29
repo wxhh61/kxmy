@@ -16,7 +16,7 @@ export default React.createClass({
           </Navbar.Header>
           <Navbar.Collapse>
             <Nav  class="navbar navbar-default">
-              <NavItem inverse componentClass={Link} href="/about"  to="/about"><Glyphicon glyph="glyphicon glyphicon-home" />基地简介</NavItem>
+              <NavItem componentClass={Link} href="/"  to="/"><Glyphicon glyph="glyphicon glyphicon-home" />基地简介</NavItem>
               <NavItem componentClass={Link} href="/horsebox"  to="/horsebox"><Glyphicon glyph="glyphicon glyphicon-list-alt" />马匹介绍</NavItem>
               <NavItem componentClass={Link} href="/schedule"  to="/schedule"><Glyphicon glyph="glyphicon glyphicon-align-left" />赛事行程</NavItem>
               <NavItem componentClass={Link} href="/contact"  to="/contact"><Glyphicon glyph="glyphicon glyphicon-envelope" />联系方式</NavItem>

@@ -8,12 +8,12 @@ var data = [
   {id: 1,
    name: "horse A",
    img: require("../public/horse.jpg"),
-   description:"description1 "
+   description:"description1 description1description1description1 \n description1description1description1description1description1 "
   },
   {id: 2,
    name: "horse b",
    img:  require("../public/horse.jpg"),
-   description:"description2 "
+   description:"description2 description1description1description1d \n escription1description1description1description1description1 "
   }
 ];
 
