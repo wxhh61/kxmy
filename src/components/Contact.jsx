@@ -1,5 +1,5 @@
 import React from 'react'
-import { Navbar, Nav , NavItem,FormGroup,FormControl, ControlLabel, Col,Button, Row} from 'react-bootstrap';
+import { Navbar, Nav , NavItem,FormGroup,FormControl, ControlLabel, Col,Button, Row, Well} from 'react-bootstrap';
 import {Link } from 'react-router'
 
 
@@ -53,11 +53,16 @@ export default React.createClass({
 
 
         <Row>
-        <Col>
-           <div>point</div>
+        <Col  xsOffset={1} sm={3} md={3}>
+
+        <h2>马场地址:</h2>
+       <Well>呼伦贝尔市鄂温克旗巴彦托海镇三号草库伦</Well>
+
+
+
         </Col>
 
-           <Col xsOffset={3} sm={4} md={6}>
+           <Col sm={3} md={3}>
         <form onSubmit={this.handleSubmit}>
          <FormGroup
           controlId="formBasicText"

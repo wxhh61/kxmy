@@ -9,7 +9,7 @@ export default React.createClass({
     return (
 <div id="div">
   <Row>
-    <Col  xs={6} md={6}>
+    <Col  xs={5} md={5}>
     <Image className="zoom_img" src={this.props.img}  rounded responsive />
     </Col>
 

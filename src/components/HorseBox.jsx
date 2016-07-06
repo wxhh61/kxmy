@@ -6,15 +6,31 @@ import HorseList from "./HorseList.jsx"
 
 var data = [
   {id: 1,
-   name: "horse A",
-   img: require("../public/horse.jpg"),
-   description:"description1 description1description1description1 \n description1description1description1description1description1 "
+   name: "K-3-23",
+   img: require("../public/horses/1.jpg"),
+   description:"性别:♂   出生年:2013年  体高:152 体长:154  胸围:161  管围:19 "
   },
   {id: 2,
-   name: "horse b",
-   img:  require("../public/horse.jpg"),
-   description:"description2 description1description1description1d \n escription1description1description1description1description1 "
+   name: "K-5-7",
+   img:  require("../public/horses/3.jpg"),
+   description:"性别:♂   出生年:2013年  体高:152 体长:154  胸围:161  管围:19 "
+  },
+  {id: 3,
+   name: "K-1-8",
+   img:  require("../public/horses/5.jpg"),
+   description:"性别:♂   出生年:2013年  体高:152 体长:154  胸围:161  管围:19 "
+  },
+  {id: 4,
+   name: "K-3-12",
+   img:  require("../public/horses/7.jpg"),
+   description:"性别:♂   出生年:2013年  体高:152 体长:154  胸围:161  管围:19 "
+  },
+  {id: 5,
+   name: "K-3-18",
+   img:  require("../public/horses/9.jpg"),
+   description:"性别:♂   出生年:2013年  体高:152 体长:154  胸围:161  管围:19 "
   }
+
 ];
 
 export default React.createClass({

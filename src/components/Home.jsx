@@ -83,13 +83,13 @@ export default React.createClass({
         <NavItem title="Item"  componentClass={Link} href="/about"  to="/contact"><Glyphicon glyph="glyphicon glyphicon-grain" />马闻</NavItem>
              <NavItem  title="Item"  componentClass={Link} href="/about"  to="/contact"><Glyphicon glyph="glyphicon glyphicon-grain" />呼伦贝尔的传说</NavItem>
         <NavItem title="Item"  componentClass={Link} href="/about"  to="/contact"><Glyphicon glyph="glyphicon glyphicon-grain" />呼伦贝尔的传说1</NavItem>
-        </Nav>
+        </Nav>/
            </Row>
 
 
        </Col>
         <Col sm={8} md={8}>
-           <Image width={900} height={600} text-align="center"  alt="900x600" src= { require("../public/horse.jpg")} responsive thumbnail />
+           <Image width={600} height={600} text-align="center"  alt="900x600" src= { require("../public/home_horse.jpg")} responsive thumbnail />
         </Col>
     </Row>
   </Grid>
