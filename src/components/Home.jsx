@@ -77,12 +77,12 @@ export default React.createClass({
         </Row>
            <Row>
            <Nav  bsStyle="pills" stacked  >
-        <NavItem   title="Item"  componentClass={Link} href="/about"  to="/contact"><Glyphicon glyph="glyphicon glyphicon-grain" />拥有百年马史</NavItem>
-        <NavItem title="Item"  componentClass={Link} href="/about"  to="/contact"><Glyphicon glyph="glyphicon glyphicon-grain" /> 草原名驹</NavItem>
-             <NavItem  title="Item"  componentClass={Link} href="/about"  to="/contact"><Glyphicon glyph="glyphicon glyphicon-grain" />我与马</NavItem>
-        <NavItem title="Item"  componentClass={Link} href="/about"  to="/contact"><Glyphicon glyph="glyphicon glyphicon-grain" />马闻</NavItem>
-             <NavItem  title="Item"  componentClass={Link} href="/about"  to="/contact"><Glyphicon glyph="glyphicon glyphicon-grain" />呼伦贝尔的传说</NavItem>
-        <NavItem title="Item"  componentClass={Link} href="/about"  to="/contact"><Glyphicon glyph="glyphicon glyphicon-grain" />呼伦贝尔的传说1</NavItem>
+        <NavItem   title="Item"  componentClass={Link} href="/about"  to="/contact"><img src={require("../public/1.png")}/>拥有百年马史</NavItem>
+        <NavItem title="Item"  componentClass={Link} href="/about"  to="/contact"><img src={require("../public/1.png")}/> 草原名驹</NavItem>
+             <NavItem  title="Item"  componentClass={Link} href="/about"  to="/contact"><img src={require("../public/1.png")}/>我与马</NavItem>
+        <NavItem title="Item"  componentClass={Link} href="/about"  to="/contact"><img src={require("../public/1.png")}/>马闻</NavItem>
+             <NavItem  title="Item"  componentClass={Link} href="/about"  to="/contact"><img src={require("../public/1.png")}/>呼伦贝尔的传说</NavItem>
+        <NavItem title="Item"  componentClass={Link} href="/about"  to="/contact"><img src={require("../public/1.png")}/>呼伦贝尔的传说1</NavItem>
         </Nav>/
            </Row>
 

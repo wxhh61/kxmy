@@ -35,6 +35,11 @@
 
 }
 
+
+.nav>li {
+    list-style-image:  url('./1.png');
+}
+
 #left-tabs-exampl {
     background-color:#161616;
 }
@@ -55,6 +60,7 @@ body {
     margin: 0 0 10px;
     font-family: hanzi, Times, serif;
     font-size: 60px;
+    color:#9d9d9d;
 }
 
 
@@ -84,6 +90,7 @@ footer > p {
     font-size: 10px;
     color:#9d9d9d;
 }
+
 
 label {
     color:rgba(0,0,0,.5);

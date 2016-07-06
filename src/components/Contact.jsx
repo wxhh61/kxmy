@@ -52,57 +52,54 @@ export default React.createClass({
     return (
 
 
-        <Row>
-        <Col  xsOffset={1} sm={3} md={3}>
+<Row>
+   <Col  xsOffset={2} sm={4} md={4}>
 
-        <h2>马场地址:</h2>
-       <Well>呼伦贝尔市鄂温克旗巴彦托海镇三号草库伦</Well>
+    <h2>马场地址:</h2>
+    <Well>呼伦贝尔市鄂温克旗巴彦托海镇三号草库伦</Well>
+   </Col>
 
-
-
-        </Col>
-
-           <Col sm={3} md={3}>
+   <Col sm={4} md={4} lg={4}>
         <form onSubmit={this.handleSubmit}>
-         <FormGroup
-          controlId="formBasicText"
-        >
-        <ControlLabel>您的名字</ControlLabel>
-        <FormControl
-          type="text"
-          placeholder="您的名字"
-          value={this.state.name}
-          onChange={this.handleNameChange}
-        />
-        <ControlLabel>您的电子邮箱</ControlLabel>
-        <FormControl
-          type="text"
-          placeholder="您的电子邮箱"
-          value={this.state.email}
-          onChange={this.handleEmailChange}
-        />
-        <ControlLabel>您的联系电</ControlLabel>
-        <FormControl
-          type="text"
-          placeholder="您的联系电话"
-          value={this.state.phone}
-          onChange={this.handlePhoneChange}
-        />
-        <ControlLabel>留言..</ControlLabel>
-        <FormControl
-          componentClass="textarea"
-          type="text"
-          placeholder="留言..."
-          value={this.state.text}
-          onChange={this.handleTextChange}
-        />
-        <Button type="submit" value="提交" >
-           提交
-        </Button>
-         </FormGroup>
+          <FormGroup
+             controlId="formBasicText"
+             >
+            <ControlLabel>您的名字</ControlLabel>
+            <FormControl
+               type="text"
+               placeholder="您的名字"
+               value={this.state.name}
+               onChange={this.handleNameChange}
+               />
+            <ControlLabel>您的电子邮箱</ControlLabel>
+            <FormControl
+               type="text"
+               placeholder="您的电子邮箱"
+               value={this.state.email}
+               onChange={this.handleEmailChange}
+               />
+            <ControlLabel>您的联系电</ControlLabel>
+            <FormControl
+               type="text"
+               placeholder="您的联系电话"
+               value={this.state.phone}
+               onChange={this.handlePhoneChange}
+               />
+            <ControlLabel>留言..</ControlLabel>
+            <FormControl
+               componentClass="textarea"
+               type="text"
+               placeholder="留言..."
+               value={this.state.text}
+               onChange={this.handleTextChange}
+               />
+            <Button type="submit" value="提交" >
+              提交
+            </Button>
+          </FormGroup>
         </form>
-        </Col>
-        </Row>
+    </Col>
+</Row>
     );
   }
 })
