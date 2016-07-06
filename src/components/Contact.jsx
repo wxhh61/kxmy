@@ -69,28 +69,26 @@ export default React.createClass({
           <FormGroup
              controlId="formBasicText"
              >
-            <ControlLabel>您的名字</ControlLabel>
+               <Panel id="adress"  header="给我们留言"  bsStyle="warning" >
             <FormControl
                type="text"
                placeholder="您的名字"
                value={this.state.name}
                onChange={this.handleNameChange}
-               />
-            <ControlLabel>您的电子邮箱</ControlLabel>
-            <FormControl
+        />
+
+           <FormControl
                type="text"
                placeholder="您的电子邮箱"
                value={this.state.email}
                onChange={this.handleEmailChange}
-               />
-            <ControlLabel>您的联系电</ControlLabel>
-            <FormControl
+        />
+          <FormControl
                type="text"
                placeholder="您的联系电话"
                value={this.state.phone}
                onChange={this.handlePhoneChange}
-               />
-            <ControlLabel>留言..</ControlLabel>
+        />
             <FormControl
                componentClass="textarea"
                type="text"
@@ -98,6 +96,7 @@ export default React.createClass({
                value={this.state.text}
                onChange={this.handleTextChange}
                />
+        </Panel>
             <Button type="submit" value="提交" >
               提交
             </Button>
