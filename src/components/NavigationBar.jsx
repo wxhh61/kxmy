@@ -23,7 +23,11 @@ export default React.createClass({
             </Nav>
           </Navbar.Collapse>
         </Navbar>
-        {this.props.children}
+          {this.props.children}
+        <footer>
+          <p>Copyright ©1996-2016 kexing Corporation, All Rights Reserved</p>
+          </footer>
+
       </div>
       );
   }
