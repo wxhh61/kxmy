@@ -1,5 +1,5 @@
 import React from 'react'
-import { Navbar, Nav , NavItem,FormGroup,FormControl, ControlLabel, Col,Button, Row, Well} from 'react-bootstrap';
+import { Navbar, Nav , NavItem,FormGroup,FormControl, ControlLabel, Col,Button, Row, Well, Panel} from 'react-bootstrap';
 import {Link } from 'react-router'
 
 
@@ -55,8 +55,13 @@ export default React.createClass({
 <Row>
    <Col  xsOffset={2} sm={4} md={4}>
 
-    <h2>马场地址:</h2>
-    <Well>呼伦贝尔市鄂温克旗巴彦托海镇三号草库伦</Well>
+        <Panel id="adress"  header="联系方式"  bsStyle="warning" >
+             发邮件联系我们 <a href="mailto:webmaster@somedomain.com">电子邮件</a><br/>
+        马场地址:<br/>
+        呼伦贝尔市 , 鄂温克旗<br/>
+        巴彦托海镇,  三号草库伦<br/>
+        邮编:021100
+    </Panel>
    </Col>
 
    <Col sm={4} md={4} lg={4}>

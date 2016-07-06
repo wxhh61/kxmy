@@ -70,7 +70,7 @@ export default React.createClass({
 // </Grid>
  <Clearfix>
    <Grid style={divStyle}>
-     <Row className="show-grid">
+     <Row id="home">
         <Col xsOffset={1} sm={6} md={3}>
         <Row>
         <p id="hanzi">三河马</p>
@@ -78,7 +78,7 @@ export default React.createClass({
            <Row>
            <Nav  bsStyle="pills" stacked  >
         <NavItem   title="Item"  componentClass={Link} href="/about"  to="/contact"><img src={require("../public/1.png")}/>拥有百年马史</NavItem>
-        <NavItem title="Item"  componentClass={Link} href="/about"  to="/contact"><img src={require("../public/1.png")}/> 草原名驹</NavItem>
+        <NavItem title="Item"  componentClass={Link} href="/about"  to="/contact"><img src={require("../public/1.png")}/>草原名驹</NavItem>
              <NavItem  title="Item"  componentClass={Link} href="/about"  to="/contact"><img src={require("../public/1.png")}/>我与马</NavItem>
         <NavItem title="Item"  componentClass={Link} href="/about"  to="/contact"><img src={require("../public/1.png")}/>马闻</NavItem>
              <NavItem  title="Item"  componentClass={Link} href="/about"  to="/contact"><img src={require("../public/1.png")}/>呼伦贝尔的传说</NavItem>

@@ -31,13 +31,16 @@
 }
 
 .nav>li>a {
-    color:#141415;
+    color:#9d9d9d;
 
 }
 
 
-.nav>li {
+#home {
     list-style-image:  url('./1.png');
+    font-family: Microsoft YaHei;
+    font-size: 20px;
+    color:#9d9d9d;
 }
 
 #left-tabs-exampl {
@@ -93,7 +96,7 @@ footer > p {
 
 
 label {
-    color:rgba(0,0,0,.5);
+    color:#9d9d9d;
 }
 
 /* .enlarge:hover { */
@@ -152,4 +155,9 @@ background: -webkit-linear-gradient(top,  #fefcea 0%,#fcf8e3 100%);
 background: linear-gradient(to bottom,  #fefcea 0%,#fcf8e3 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', endColorstr='#fcf8e3',GradientType=0 );
 
+}
+
+#adress {
+    margin-top: 40px;
+    text-align: center;
 }
