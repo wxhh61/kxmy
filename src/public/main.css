@@ -161,3 +161,27 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', end
     margin-top: 40px;
     text-align: center;
 }
+
+#form {
+    width: 50%;
+    padding: 12px 10px;
+    margin: 8px 8px 8px 8px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#check {
+    padding: 12px 10px;
+     margin:  0px 8px 8px 8px;
+       width: 20px;
+       height: 20px;
+
+}
+
+#search {
+       font-size: 15px;
+       color:#9d9d9d;
+
+}
