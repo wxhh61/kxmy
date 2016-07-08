@@ -6,7 +6,7 @@ import {Link } from 'react-router'
 export default React.createClass({
 
   getInitialState: function() {
-    return {name: '',phone:'',email:'', text: ''};
+    return {name: '',phone:'',email:'', text: '',clicked:false};
   },
   handleNameChange: function(e) {
     this.setState({name: e.target.value});
@@ -45,18 +45,18 @@ export default React.createClass({
     }
     // TODO: send request to the server
     this.handleCommentSubmit({name: name, text: text, phone:phone, email:email});
-    this.setState({name: '', text: '',phone:'',email:''});
+    this.setState({name: '', text: '',phone:'',email:'', clicked:true});
   },
   render() {
 
+    if(this.state.clicked == false) {
     return (
 
 
 <Row>
    <Col  xsOffset={2} sm={4} md={4}>
-
         <Panel id="adress"  header="联系方式"  bsStyle="warning" >
-             发邮件联系我们 <a href="mailto:webmaster@somedomain.com">电子邮件</a><br/>
+             发邮件联系我们 <a href="mailto:ewkkxmy@163.com">电子邮件</a><br/>
         马场地址:<br/>
         呼伦贝尔市 , 鄂温克旗<br/>
         巴彦托海镇,  三号草库伦<br/>
@@ -105,5 +105,14 @@ export default React.createClass({
     </Col>
 </Row>
     );
-  }
+    }
+    else return (
+        <Col  xsOffset={4} sm={4} md={4}>
+        <Panel id="adress"  header=" "  bsStyle="warning" >
+        谢谢您的留言,<br/>
+        我们会尽快和回复您!
+        </Panel>
+     </Col>
+    ) ;
+    }
 })
