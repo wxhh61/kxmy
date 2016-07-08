@@ -83,7 +83,7 @@ export default React.createClass({
         <NavItem title="Item"  componentClass={Link} href="/about"  to="/contact"><img src={require("../public/1.png")}/>马闻</NavItem>
              <NavItem  title="Item"  componentClass={Link} href="/about"  to="/contact"><img src={require("../public/1.png")}/>呼伦贝尔的传说</NavItem>
         <NavItem title="Item"  componentClass={Link} href="/about"  to="/contact"><img src={require("../public/1.png")}/>呼伦贝尔的传说1</NavItem>
-        </Nav>/
+        </Nav>
            </Row>
 
 
